@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakaDev - Chat Overlays Personalizados</title>
+    <link rel="icon" type="image/png" href="https://i.ibb.co/LzYqBY0w/makadev-gear.png" />
+    <link rel="apple-touch-icon" href="https://i.ibb.co/LzYqBY0w/makadev-gear.png" />
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonte Inter do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-inter">
+    <header class="fixed top-0 left-0 right-0 z-10 bg-gray-900/90 backdrop-blur-sm shadow-lg">
+        <div class="container mx-auto px-4 py-8 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-primary no-underline">MakaDev</a>
+            <nav>
+                <ul class="flex space-x-6 list-none">
+                    <li><a href="#sobre" class="hover:text-primary transition-colors">Sobre</a></li>
+                    <li><a href="#servicos" class="hover:text-primary transition-colors">Serviços</a></li>
+                    <li><a href="#precos" class="hover:text-primary transition-colors">Preços</a></li>
+                    <li><a href="#portfolio" class="hover:text-primary transition-colors">Portfólio</a></li>
+                    <li><a href="#contato" class="hover:text-primary transition-colors">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-20 px-4">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center mb-6">
+                <span class="text-9xl">🧑💻</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 bg-gradient-to-r from-primary via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                MakaDev
+            </h1>
+            <p class="text-2xl md:text-3xl mb-4 text-white/90">
+                💬 Chats e sistemas personalizados para lives
+            </p>
+            <p class="text-lg md:text-xl mb-8 text-gray-400 max-w-2xl mx-auto">
+                Transformo ideias em experiências interativas 🎥✨
+                <br>
+                JS | Node.js | OBS | Twitch | YouTube
+            </p>
+            <div class="flex gap-4 justify-center flex-wrap">
+                <a href="#precos" class="btn-primary text-lg px-8 py-3 rounded-lg font-semibold transition-transform hover:scale-105">
+                    Ver Preços
+                </a>
+                <a href="#portfolio" class="btn-outline text-lg px-8 py-3 rounded-lg font-semibold transition-transform hover:scale-105">
+                    Ver Projetos
+                </a>
+            </div>
+            <div class="mt-12 animate-bounce">
+                <a href="#sobre" class="text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="py-20 px-4 bg-gray-800">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl font-bold mb-8 text-center bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent">
+                Sobre mim
+            </h2>
+            <p class="text-lg text-center text-white/80 leading-relaxed">
+                Olá! Sou <span class="text-primary font-semibold">Maka</span>, desenvolvedor focado em criar
+                experiências únicas para streamers e VTubers. Crio chats personalizados e sistemas de alerta, cada
+                projeto é feito do zero, com foco em leveza e personalidade. Meu objetivo é transformar a live em algo
+                único e memorável para o público. 💻
+            </p>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent">
+                O que eu ofereço
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Serviço 1 -->
+                <div class="card bg-gray-800 border border-gray-700 hover:border-primary transition-colors p-6 rounded-xl">
+                    <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette text-primary"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><path d="M4 13a4 4 0 0 0 4 4c.67 0 1.3-.16 1.8-.44l.8.8c.2.2.45.3.7.3h3.5c.7 0 1.3-.3 1.7-.8l.8-.8c.28-.5.44-1.13.44-1.8a4 4 0 0 0-4-4c-.67 0-1.3.16-1.8.44l-.8-.8c-.2-.2-.45-.3-.7-.3H8.5c-.7 0-1.3.3-1.7.8l-.8.8C5.16 11.7 5 12.33 5 13Z"/><path d="M2 17a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-2Z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Chat Overlay Personalizado</h3>
+                    <p class="text-gray-400">Design único que combina com a identidade visual do seu canal</p>
+                </div>
+
+                <!-- Serviço 2 -->
+                <div class="card bg-gray-800 border border-gray-700 hover:border-primary transition-colors p-6 rounded-xl">
+                    <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code text-primary"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Desenvolvimento Customizado</h3>
+                    <p class="text-gray-400">Código limpo e otimizado, feito sob medida para suas necessidades</p>
+                </div>
+
+                <!-- Serviço 3 -->
+                <div class="card bg-gray-800 border border-gray-700 hover:border-primary transition-colors p-6 rounded-xl">
+                    <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap text-primary"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Compatibilidade Total</h3>
+                    <p class="text-gray-400">Funciona perfeitamente com Twitch, YouTube e OBS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preços Section -->
+    <section id="precos" class="py-20 px-4 bg-gray-800">
+    <div class="container mx-auto">
+        <h2 class="text-4xl font-bold mb-4 text-center bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent">
+            Pacotes e Preços
+        </h2>
+        <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+            Escolha o pacote ideal para o seu canal. Todos incluem código otimizado e suporte durante o desenvolvimento.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto price-cards-container">
+            <!-- Básico -->
+            <div class="card-price-container">
+                <div class="card bg-gray-900 border border-gray-700 hover:border-primary transition-all p-6 rounded-xl flex flex-col">
+                    <div class="card-header mb-4">
+                        <span class="badge bg-primary/20 text-primary px-3 py-1 rounded-lg w-fit mb-2">Básico</span>
+                        <h3 class="text-3xl font-bold mt-2">R$ 100</h3>
+                        <p class="text-gray-400">Ideal para streamers iniciantes</p>
+                    </div>
+                    <div class="card-content flex-grow">
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2 text-primary mt-1 flex-shrink-0"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                                <span>Chat overlay personalizado (design simples)</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2 text-primary mt-1 flex-shrink-0"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                                <span>Compatível com <span class="badge bg-primary/20 text-primary text-xs font-medium px-2 py-0.5 rounded-full inline-block">Twitch</span> OU <span class="badge bg-primary/20 text-primary text-xs font-medium px-2 py-0.5 rounded-full inline-block">YouTube</span></span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2 text-primary mt-1 flex-shrink-0"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                                <span>2 revisões incluídas</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2 text-primary mt-1 flex-shrink-0"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                                <span class="font-semibold">Prazo: 7-10 dias</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#contato" class="btn-primary w-full mt-6 py-2.5 rounded-lg text-center font-semibold">
+                        Solicitar Orçamento
+                    </a>
+                </div>
+            </div>
+
+            <!-- Intermediário -->
+            <div class="card-price-container">
+                <div class="card bg-gray-900 border border-primary hover:border-primary transition-all p-6 rounded-xl flex flex-col">
+                    <div class="card-header mb-4">
+                        <span class="badge bg-primary/20 text-primary px-3 py-1 rounded-lg w-fit mb-2">Intermediário</span>
+                        <h3 class="text-3xl font-bold mt-2">R$ 250</h3>
+                        <p class="text-gray-400">Ideal para streamers estabelecidos</p>
+                    </div>
+                    <div class="card-content flex-grow">
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2 text-primary mt-1 flex-shrink-0"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                                <span>Chat overlay personalizado (design elaborado)</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2 text-primary mt-1 flex-shrink-0"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                                <span>Compatível com <span class="badge bg-primary/20 text-primary text-xs font-medium px-2 py-0.5 rounded-full inline-block">Twitch</span> E <span class="badge bg-primary/20 text-primary text-xs font-medium px-2 py-0.5 rounded-full inline-block">YouTube</span></span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2 text-primary mt-1 flex-shrink-0"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                                <span>Animações de entrada/saída de mensagens</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2 text-primary mt-1 flex-shrink-0"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                                <span>Badges customizados</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2 text-primary mt-1 flex-shrink-0"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                                <span>3 revisões incluídas</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2 text-primary mt-1 flex-shrink-0"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                                <span class="font-semibold">Prazo: 10-14 dias</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#contato" class="btn-primary w-full mt-6 py-2.5 rounded-lg text-center font-semibold">
+                        Solicitar Orçamento
+                    </a>
+                </div>
+            </div>
+
+            <!-- Avançado -->
+            <div class="card-price-container">
+                <div class="card bg-gray-900 border border-gray-700 hover:border-primary transition-all p-6 rounded-xl flex flex-col">
+                    <div class="card-header mb-4">
+                        <span class="badge bg-primary/20 text-primary px-3 py-1 rounded-lg w-fit mb-2">Avançado</span>
+                        <h3 class="text-3xl font-bold mt-2">R$ 400+</h3>
+                        <p class="text-gray-400">Para projetos complexos e exclusivos</p>
+                    </div>
+                    <div class="card-content flex-grow">
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2 text-primary mt-1 flex-shrink-0"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                                <span>Tudo do Intermediário</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2 text-primary mt-1 flex-shrink-0"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                                <span>Integração com APIs externas</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2 text-primary mt-1 flex-shrink-0"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                                <span>Sistemas de alerta</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2 text-primary mt-1 flex-shrink-0"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                                <span>Consultoria e planejamento de projeto</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2 text-primary mt-1 flex-shrink-0"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                                <span>Revisões ilimitadas</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2 text-primary mt-1 flex-shrink-0"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                                <span class="font-semibold">Prazo: A combinar</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#contato" class="btn-primary w-full mt-6 py-2.5 rounded-lg text-center font-semibold">
+                        Solicitar Orçamento
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent">
+                Portfólio
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Projeto 1 -->
+                <div class="card bg-gray-800 border border-gray-700 hover:border-primary transition-colors rounded-xl overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400?text=Projeto+1" alt="nuvisca" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">@nuvisca</h3>
+                        <p class="text-gray-400 mb-3">Chat criado para a live dela, inspirado na personalidade e no tema da personagem para transmitir a identidade visual dela ao público.</p>
+                        <span class="badge border border-primary text-primary text-xs font-medium px-2 py-0.5 rounded-full">Twitch</span>
+                        <span class="badge border border-primary text-primary text-xs font-medium px-2 py-0.5 rounded-full">YouTube</span>
+                        <span class="badge border border-primary text-primary text-xs font-medium px-2 py-0.5 rounded-full">OBS</span>
+                    </div>
+                </div>
+                <!-- Projeto 2 -->
+                <div class="card bg-gray-800 border border-gray-700 hover:border-primary transition-colors rounded-xl overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400?text=Projeto+2" alt="myasoaxe" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">@myasoaxe</h3>
+                        <p class="text-gray-400 mb-3">Chat minimalista para lives — visual limpo e foco na experiência do chat.</p>
+                        <span class="badge border border-primary text-primary text-xs font-medium px-2 py-0.5 rounded-full">YouTube</span>
+                        <span class="badge border border-primary text-primary text-xs font-medium px-2 py-0.5 rounded-full">OBS</span>
+                    </div>
+                </div>
+                <!-- Projeto 3 -->
+                <div class="card bg-gray-800 border border-gray-700 hover:border-primary transition-colors rounded-xl overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400?text=Projeto+3" alt="karindelay" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">@karindelay</h3>
+                        <p class="text-gray-400 mb-3">Chat personalizado criado para combinar com a estética da personagem.</p>
+                        <span class="badge border border-primary text-primary text-xs font-medium px-2 py-0.5 rounded-full">Twitch</span>
+                        <span class="badge border border-primary text-primary text-xs font-medium px-2 py-0.5 rounded-full">OBS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#contato" class="btn-primary text-lg px-8 py-3 rounded-lg font-semibold transition-transform hover:scale-105">
+                    Ver Mais Projetos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="py-20 px-4 bg-gray-800">
+        <div class="container mx-auto max-w-xl">
+            <h2 class="text-4xl font-bold mb-4 text-center bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent">
+                Entre em Contato
+            </h2>
+            <p class="text-center text-gray-400 mb-12">
+                Vamos transformar sua ideia em realidade. Preencha o formulário abaixo ou me chame no Discord.
+            </p>
+
+            <form id="contact-form" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-white mb-1">Nome</label>
+                    <input type="text" id="name" name="name" required class="w-full p-3 rounded-lg bg-gray-900 border border-gray-700 focus:border-primary focus:ring-primary transition-colors text-white" placeholder="Seu nome ou nick">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-white mb-1">E-mail</label>
+                    <input type="email" id="email" name="email" required class="w-full p-3 rounded-lg bg-gray-900 border border-gray-700 focus:border-primary focus:ring-primary transition-colors text-white" placeholder="seu.email@exemplo.com">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-white mb-1">Mensagem / Detalhes do Projeto</label>
+                    <textarea id="message" name="message" rows="5" required class="w-full p-3 rounded-lg bg-gray-900 border border-gray-700 focus:border-primary focus:ring-primary transition-colors text-white" placeholder="Descreva seu projeto e suas necessidades..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary w-full py-3 rounded-lg font-semibold transition-transform hover:scale-[1.01]">
+                    Enviar Mensagem
+                </button>
+            </form>
+
+            <div class="mt-8 text-center">
+                <p class="text-lg font-semibold mb-4">Ou me encontre em:</p>
+                <div class="flex justify-center gap-4 flex-wrap">
+                    <button class="btn-primary px-6 py-3 rounded-lg font-semibold transition-transform hover:scale-105" id="discord-copy" aria-label="Clique para copiar o nome de usuário do Discord">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle inline mr-2"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8L3 21Z"/></svg>
+                        Copiar Discord
+                    </button>
+                    <a href="https://x.com/MakaDevCode" target="_blank" class="btn-outline px-6 py-3 rounded-lg font-semibold transition-transform hover:scale-105" aria-label="Visitar Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter inline mr-2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        Twitter
+                    </a>
+                </div>
+                <div id="copy-feedback" class="text-green-400 text-sm opacity-0 transition-opacity duration-300 mt-2">Copiado!</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 border-t border-gray-800 py-8">
+        <div class="container mx-auto px-4 text-center text-gray-400">
+            <p>&copy; 2025 MakaDev. Todos os direitos reservados.</p>
+            <p class="mt-2 text-sm">Desenvolvido com 💻 e ☕.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
