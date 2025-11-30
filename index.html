@@ -14,19 +14,27 @@
 </head>
 <body class="bg-gray-900 text-white font-inter">
     <header class="fixed top-0 left-0 right-0 z-10 bg-gray-900/90 backdrop-blur-sm shadow-lg">
-        <div class="container mx-auto px-4 py-8 flex justify-between items-center">
-            <a href="#" class="text-3xl font-bold text-primary no-underline">MakaDev</a>
-            <nav>
-                <ul class="flex space-x-6 list-none">
-                    <li><a href="#sobre" class="hover:text-primary transition-colors">Sobre</a></li>
-                    <li><a href="#servicos" class="hover:text-primary transition-colors">Serviços</a></li>
-                    <li><a href="#precos" class="hover:text-primary transition-colors">Preços</a></li>
-                    <li><a href="#portfolio" class="hover:text-primary transition-colors">Portfólio</a></li>
-                    <li><a href="#contato" class="hover:text-primary transition-colors">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class="container mx-auto px-4 py-8 flex justify-between items-center">
+
+        <a href="#" class="text-3xl font-bold text-primary no-underline">MakaDev</a>
+
+        <!-- Botão Mobile -->
+        <button id="mobile-menu-btn" class="mobile-btn">☰</button>
+
+        <!-- Menu -->
+        <nav id="navbar">
+            <ul class="flex space-x-6 list-none">
+                <li><a href="#sobre" class="hover:text-primary transition-colors">Sobre</a></li>
+                <li><a href="#servicos" class="hover:text-primary transition-colors">Serviços</a></li>
+                <li><a href="#precos" class="hover:text-primary transition-colors">Preços</a></li>
+                <li><a href="#portfolio" class="hover:text-primary transition-colors">Portfólio</a></li>
+                <li><a href="#contato" class="hover:text-primary transition-colors">Contato</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
 
     <!-- Hero Section -->
     <section class="min-h-screen flex items-center justify-center pt-20 px-4">
@@ -255,7 +263,10 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <!-- Projeto 1 -->
                 <div class="card bg-gray-800 border border-gray-700 hover:border-primary transition-colors rounded-xl overflow-hidden">
-                    <img src="https://via.placeholder.com/600x400?text=Projeto+1" alt="nuvisca" class="w-full h-48 object-cover">
+                    <video class="w-full h-48 object-cover" autoplay loop muted playsinline>
+                        <source src="https://i.imgur.com/B3GasRF.mp4" type="video/mp4">
+                        Seu navegador não suporta a tag de vídeo.
+                    </video>
                     <div class="p-4">
                         <h3 class="text-xl font-semibold mb-2">@nuvisca</h3>
                         <p class="text-gray-400 mb-3">Chat criado para a live dela, inspirado na personalidade e no tema da personagem para transmitir a identidade visual dela ao público.</p>
@@ -266,7 +277,10 @@
                 </div>
                 <!-- Projeto 2 -->
                 <div class="card bg-gray-800 border border-gray-700 hover:border-primary transition-colors rounded-xl overflow-hidden">
-                    <img src="https://via.placeholder.com/600x400?text=Projeto+2" alt="myasoaxe" class="w-full h-48 object-cover">
+                    <video class="w-full h-48 object-cover" autoplay loop muted playsinline>
+                        <source src="https://i.imgur.com/GeGJ7ao.mp4" type="video/mp4">
+                        Seu navegador não suporta a tag de vídeo.
+                    </video>
                     <div class="p-4">
                         <h3 class="text-xl font-semibold mb-2">@myasoaxe</h3>
                         <p class="text-gray-400 mb-3">Chat minimalista para lives — visual limpo e foco na experiência do chat.</p>
@@ -276,7 +290,10 @@
                 </div>
                 <!-- Projeto 3 -->
                 <div class="card bg-gray-800 border border-gray-700 hover:border-primary transition-colors rounded-xl overflow-hidden">
-                    <img src="https://via.placeholder.com/600x400?text=Projeto+3" alt="karindelay" class="w-full h-48 object-cover">
+                    <video class="w-full h-48 object-cover" autoplay loop muted playsinline>
+                        <source src="https://i.imgur.com/t5Bzh7p.mp4" type="video/mp4">
+                        Seu navegador não suporta a tag de vídeo.
+                    </video>
                     <div class="p-4">
                         <h3 class="text-xl font-semibold mb-2">@karindelay</h3>
                         <p class="text-gray-400 mb-3">Chat personalizado criado para combinar com a estética da personagem.</p>
@@ -344,6 +361,19 @@
             <p class="mt-2 text-sm">Desenvolvido com 💻 e ☕.</p>
         </div>
     </footer>
+
+    <!-- Modal para Vídeo em Tela Cheia -->
+    <div id="video-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button id="close-modal" class="close-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </button>
+            <video id="modal-video" controls autoplay loop muted playsinline class="modal-video-player">
+                <source src="" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
