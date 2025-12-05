@@ -657,3 +657,127 @@ body {
         display: block;
     }
 }
+
+
+
+/* ===========================
+   Estilo para seção de Preços
+   =========================== */
+
+/* Grid responsivo */
+.price-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  margin-top: 1.5rem;
+}
+
+/* Cards */
+.price-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.04);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.45);
+}
+
+/* hover */
+.price-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(139,92,246,0.9);
+  box-shadow: 0 14px 30px rgba(2,6,23,0.6);
+}
+
+/* card interno */
+.card-top { margin-bottom: 0.6rem; }
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-foreground);
+}
+.card-sub {
+  color: var(--color-muted-foreground);
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+}
+
+/* preço */
+.card-price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+.price-from {
+  font-size: 0.95rem;
+  color: var(--color-muted-foreground);
+}
+.price-value {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+/* lista de recursos */
+.card-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  color: var(--color-muted-foreground);
+}
+.card-features li {
+  padding: 0.35rem 0;
+  font-size: 0.95rem;
+}
+.card-features li.muted {
+  color: rgba(148,163,184,0.7);
+  font-size: 0.85rem;
+}
+
+/* botão ocupa largura e usa .btn-primary existente (ajuste caso queira) */
+.btn-block {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+/* destaque central (card do meio) */
+.highlight-card {
+  border: 2px solid rgba(139,92,246,0.12);
+  background: linear-gradient(180deg, rgba(139,92,246,0.12), rgba(139,92,246,0.06));
+  box-shadow: 0 18px 40px rgba(139,92,246,0.08);
+}
+.highlight-card .price-value {
+  color: #fff;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-purple-400));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* adaptar btn-primary para ter contraste em destaque se necessário */
+.highlight-card .btn-primary {
+  background: #fff;
+  color: var(--color-primary);
+  border: 2px solid rgba(255,255,255,0.08);
+}
+.highlight-card .btn-primary:hover {
+  opacity: 0.95;
+}
+
+/* responsividade */
+@media (min-width: 720px) {
+  .price-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* suavizações extras para texto */
+.price-card, .price-card * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* pequenas correções para manter consistência com suas classes: */
+.rounded-3xl { border-radius: 1rem; } /* caso use no HTML */
